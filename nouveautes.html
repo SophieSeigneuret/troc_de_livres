@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Troc de livres</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="images/icon.gif" />
+</head>
+
+<body >
+<div id="wrapper">
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo-troc.png" alt="Logo Troc de Livres"></a>
+        </div>
+        <div id="header-droite">
+            <div id="inscription-rapide">
+                <a href="#">Inscription rapide</a>
+            </div>
+            <form action="index.html" id="recherche">
+                <input type="search" name="research" id="research" value="" placeholder="Recherche par titre, auteur, éditeur, catégorie...">
+                <img id="loupe" src="images/loupe.jpg" alt="loupe">
+            </form>
+            <nav>
+                <ul class="menu">
+                    <li id="bouton-menu-rouge"><a href="nouveautes.html">Nouveautés</a></li>
+                    <li id="bouton-menu-vert"><a href="mode-emploi.html">Mode d'emploi</a></li>
+                    <li id="bouton-menu-beige"><a href="#">FAQ</a></li>
+                    <li id="bouton-menu-jaune"><a href="#">Je propose un livre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <aside>
+        <div id="mon-compte">
+            <p>Mon compte</p>
+            <form action="index.html" method="get">
+                <label for="pseudo">Pseudo</label><br/>
+                <input type="text" name="pseudo" id="pseudo" value=""><br/>
+                <label for="password">Mot de passe</label><br/>
+                <input type="password" name="password" id="password" value=""><br/>
+                <a href="#">mot de passe oublié ?</a>
+                <input id="connexion-compte" class="connexion" value="connexion" type="submit">
+            </form>
+        </div>
+
+        <nav id="categories">
+            <p>Catégories</p>
+            <ul>
+                <li><a href="#">Littérature</a>
+                    <ul>
+                        <li><a href="#">Littérature française</a></li>
+                        <li><a href="#">Littérature étrangère</a></li>
+                        <li><a href="#">Littérature sentimentale</a></li>
+                        <li><a href="#">Littérature humouristique</a></li>
+                        <li><a href="#">Érotisme</a></li>
+                        <li><a href="#">Biographie</a></li>
+                        <li><a href="#">Poésie</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                        <li><a href="#">Grands classiques</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Policier | Suspense</a>
+                    <ul>
+                        <li><a href="#">Policiers et thrillers</a></li>
+                        <li><a href="#">Polars historiques</a></li>
+                        <li><a href="#">Romans noirs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Science fiction | Fantasy</a></li>
+                <li><a href="#">Bandes dessinées</a>
+                    <ul>
+                        <li><a href="#">BD adultes</a></li>
+                        <li><a href="#">BD jeunesse</a></li>
+                        <li><a href="#">Mangas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Jeunesse</a>
+                    <ul>
+                        <li><a href="#">Romans jeunesse</a></li>
+                        <li><a href="#">Premières lectures</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Culture | Société</a>
+                    <ul>
+                        <li><a href="#">Dictionnaires et langues</a></li>
+                        <li><a href="#">Esotérisme et paranormal</a></li>
+                        <li><a href="#">Histoire et actualité</a></li>
+                        <li><a href="#">Religion et spiritualité</a></li>
+                        <li><a href="#">Sciences humaines</a></li>
+                        <li><a href="#">Scolaire et parascolaire</a></li>
+                        <li><a href="#">Santé et bien-être</a></li>
+                        <li><a href="#">Science, droit, économie</a></li>
+                        <li><a href="#">Vie pratique et loisirs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Guides et tourisme</a></li>
+                <li><a href="#">Divers</a>
+                    <ul>
+                        <li><a href="#">Livres dans une autre langue</a></li>
+                        <li><a href="#">Non classés</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="conteneur">
+        <h4><a href="index.html">accueil</a> > <span class="arborescence">nouveautés</span></h4>
+
+        <article class="new" id="livre1">
+            <div>
+                <a href="#"><img class="image-livre" src="images/nouveautes/bac-and-love.jpg" alt="Bac and Love"></a>
+                <a href="#image-livre1"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+                <a href="#" id="image-livre1" class="lightbox"><img class="big-image" src="images/nouveautes/bac-and-love.jpg" alt="Bac and Love"></a>
+            </div>
+            <div>
+                <p class="points">2 points</p><!--
+             --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            </div>
+            <ul class="infos">
+                <li><a href="#" class="titre">Bac and Love Rien à déclarer&nbsp;?</a></li>
+                <li><a href="#" class="auteur">Sylvaine Jaoui</a></li>
+                <li><a href="#" class="genre">Romans jeunesse</a></li>
+                <li class="editions">Ed. Rageot</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre2">
+            <div>
+                <a href="#"><img class="image-livre" src="images/nouveautes/chien-ecrase.jpg" alt="Un chien écrasé"></a>
+                <a href="#image-livre2"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+                <a href="#" id="image-livre2" class="lightbox"><img class="big-image" src="images/nouveautes/chien-ecrase.jpg" alt="Un chien écrasé"></a>
+            </div>
+            <div>
+                <p class="points">3 points</p><!--
+             --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            </div>
+            <ul class="infos">
+                <li><a href="#" class="titre">Un chien écrasé</a></li>
+                <li><a href="#" class="auteur">André Piljean</a></li>
+                <li><a href="#" class="genre">Romans noirs</a></li>
+                <li class="editions">Ed. Gallimard</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre3">
+            <a href="#"><img class="image-livre" src="images/nouveautes/croissance-zero.jpg" alt="Croissance zéro"></a>
+            <a href="#image-livre3"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#" id="image-livre3" class="lightbox"><img class="big-image" src="images/nouveautes/croissance-zero.jpg" alt="Croissance zéro"></a>
+            <p class="points">4 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Croissance zéro, comment éviter le chaos&nbsp;?</a></li>
+                <li><a href="#" class="auteur">Patrick Artus</a></li>
+                <li><a href="#" class="genre">Sciences, droit, économie</a></li>
+                <li class="editions">Ed. Fayard</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre4">
+            <a href="#"><img class="image-livre" src="images/nouveautes/fil-passe.jpg" alt="Le fil du passé"></a>
+            <a href="#image-livre4"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#" id="image-livre4" class="lightbox"><img class="big-image" src="images/nouveautes/fil-passe.jpg" alt="Le fil du passé"></a>
+            <p class="points">3 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Le fil du passé</a></li>
+                <li><a href="#" class="auteur">Diane Chamberlain</a></li>
+                <li><a href="#" class="genre">Littérature sentimentale</a></li>
+                <li class="editions">Ed. Pocket</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre5">
+            <a href="#"><img class="image-livre" src="images/nouveautes/fortune-spencer.jpg" alt="La fortune des Spencer"></a>
+            <a href="#image-livre5"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre5" id="image-livre5" class="lightbox"><img class="big-image" src="images/nouveautes/fortune-spencer.jpg" alt="La fortune des Spencer"></a>
+            <p class="points">2 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">La fortune des Spencer</a></li>
+                <li><a href="#" class="auteur">Linda Warren</a></li>
+                <li><a href="#" class="genre">Littérature sentimentale</a></li>
+                <li class="editions">Ed. Harlequin</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre6">
+            <a href="#"><img class="image-livre" src="images/nouveautes/malefices.jpg" alt="Maléfices"></a>
+            <a href="#image-livre6"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre6" id="image-livre6" class="lightbox"><img class="big-image" src="images/nouveautes/malefices.jpg" alt="Maléfices"></a>
+            <p class="points">3 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Maléfices</a></li>
+                <li><a href="#" class="auteur">Maxime Chattam</a></li>
+                <li><a href="#" class="genre">Policiers et thrillers</a></li>
+                <li class="editions">Ed. Pocket</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre7">
+            <a href="#"><img class="image-livre" src="images/nouveautes/mode-psycho.jpg" alt="Mode Psycho"></a>
+            <a href="#image-livre7"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre7" id="image-livre7" class="lightbox"><img class="big-image" src="images/nouveautes/mode-psycho.jpg" alt="Mode Psycho"></a>
+            <p class="points">5 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Mode Psycho</a></li>
+                <li><a href="#" class="auteur">Ambre Bartok</a></li>
+                <li><a href="#" class="genre">Art</a></li>
+                <li class="editions">Ed. Timée-Editions</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre8">
+            <a href="#"><img class="image-livre" src="images/nouveautes/naruto.jpg" alt="Naruto"></a>
+            <a href="#image-livre8"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre8" id="image-livre8" class="lightbox"><img class="big-image" src="images/nouveautes/naruto.jpg" alt="Naruto"></a>
+            <p class="points">5 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Naruto Shippuden le Film - Un funeste présage</a></li>
+                <li><a href="#" class="auteur">Masashi Kishimoto</a></li>
+                <li><a href="#" class="genre">Manga</a></li>
+                <li class="editions">Ed. Caméléon</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre9">
+            <a href="#"><img class="image-livre" src="images/nouveautes/odyssee.jpg" alt="L'Odyssée"></a>
+            <a href="#image-livre9"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre9" id="image-livre9" class="lightbox"><img class="big-image" src="images/nouveautes/odyssee.jpg" alt="L'Odyssée"></a>
+            <p class="points">2 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">L'Odyssée</a></li>
+                <li><a href="#" class="auteur">Homère</a></li>
+                <li><a href="#" class="genre">Grands classiques</a></li>
+                <li class="editions">Ed. Hatier</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre10">
+            <a href="#"><img class="image-livre" src="images/nouveautes/rencontres-ferroviaires.jpg" alt="Rencontres ferroviaires"></a>
+            <a href="#image-livre10"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre10" id="image-livre10" class="lightbox"><img class="big-image" src="images/nouveautes/rencontres-ferroviaires.jpg" alt="Rencontres ferroviaires"></a>
+            <p class="points">1 point</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Rencontres ferroviaires</a></li>
+                <li><a href="#" class="auteur">Régine Deforges</a></li>
+                <li><a href="#" class="genre">Littérature française</a></li>
+                <li class="editions">Ed. Fayard</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre11">
+            <a href="#"><img class="image-livre" src="images/nouveautes/resurrections.jpg" alt="Résurrections"></a>
+            <a href="#image-livre11" class="titre"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre11" id="image-livre11" class="lightbox"><img class="big-image" src="images/nouveautes/resurrections.jpg" alt="Résurrections"></a>
+            <p class="points">2 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Résurrections</a></li>
+                <li><a href="#" class="auteur">Michael Cordy</a></li>
+                <li><a href="#" class="genre">Policiers et thrillers</a></li>
+                <li class="editions">Ed. Pocket</li>
+            </ul>
+        </article><!--
+
+     --><article class="new" id="livre12">
+            <a href="#"><img class="image-livre" src="images/nouveautes/sorciers-waverly-place.jpg" alt="Les Sorciers de Waverly Place"></a>
+            <a href="#image-livre12"><img class="agrandir" src="images/agrandir.gif" alt="loupe"></a>
+            <a href="#livre12" id="image-livre12" class="lightbox"><img class="big-image" src="images/nouveautes/sorciers-waverly-place.jpg" alt="Les Sorciers de Waverly Place"></a>
+            <p class="points">2 points</p><!--
+         --><a href="#" class="panier"><i class="material-icons">shopping_basket</i></a>
+            <ul class="infos">
+                <li><a href="#" class="titre">Les Sorciers de Waverly Place Tome 1 - Haute voltige</a></li>
+                <li><a href="#" class="auteur">Disney Pixar</a></li>
+                <li><a href="#" class="genre">Romans jeunesse</a></li>
+                <li class="editions">Ed. Hachette Jeunesse</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <div id="bande-livres">
+            <img id="livres-gauche" src="images/livres-gauche.jpg" alt="footer"><!--
+         --><a href="https://www.facebook.com/" target="_blank"><img id="facebook" src="images/facebook.jpg" alt="facebook"></a><!--
+         --><a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter.jpg" alt="twitter"></a><!--
+         --><img id="livres-droite" src="images/livres-droite.jpg" alt="footer">
+        </div>
+        <div id="baseline">
+            <p class="copyright">© 2016. Sophie Seigneuret dans le cadre de l'ISI</p>
+            <a class="copyright" href="#">CGU</a>
+            <a class="copyright" href="#">Nous contacter</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

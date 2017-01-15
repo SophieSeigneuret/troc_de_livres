@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Troc de livres</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/gif" href="images/icon.gif"/>
+</head>
+
+<body>
+<main id="wrapper">
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="images/logo-troc.png" alt="Logo Troc de Livres"></a>
+        </div>
+        <div id="header-droite">
+            <div id="inscription-rapide">
+                <a href="#">Inscription rapide</a>
+            </div>
+            <form action="index.html" id="recherche">
+                <input type="search" name="research" id="research" value=""
+                       placeholder="Recherche par titre, auteur, éditeur, catégorie...">
+                <img id="loupe" src="images/loupe.jpg" alt="loupe">
+            </form>
+            <nav>
+                <ul class="menu">
+                    <li id="bouton-menu-rouge"><a href="nouveautes.html">Nouveautés</a></li>
+                    <li id="bouton-menu-vert"><a href="mode-emploi.html">Mode d'emploi</a></li>
+                    <li id="bouton-menu-beige"><a href="#">FAQ</a></li>
+                    <li id="bouton-menu-jaune"><a href="#">Je propose un livre</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <aside>
+        <div id="mon-compte">
+            <p>Mon compte</p>
+            <form action="index.html" method="get">
+                <label for="pseudo">Pseudo</label><br/>
+                <input type="text" name="pseudo" id="pseudo" value=""><br/>
+                <label for="password">Mot de passe</label><br/>
+                <input type="password" name="password" id="password" value=""><br/>
+                <a href="#">mot de passe oublié ?</a>
+                <input id="connexion-compte" class="connexion" value="connexion" type="submit">
+            </form>
+        </div>
+
+        <nav id="categories">
+            <p>Catégories</p>
+            <ul>
+                <li><a href="#">Littérature</a>
+                    <ul>
+                        <li><a href="#">Littérature française</a></li>
+                        <li><a href="#">Littérature étrangère</a></li>
+                        <li><a href="#">Littérature sentimentale</a></li>
+                        <li><a href="#">Littérature humouristique</a></li>
+                        <li><a href="#">Érotisme</a></li>
+                        <li><a href="#">Biographie</a></li>
+                        <li><a href="#">Poésie</a></li>
+                        <li><a href="#">Théâtre</a></li>
+                        <li><a href="#">Grands classiques</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Policier | Suspense</a>
+                    <ul>
+                        <li><a href="#">Policiers et thrillers</a></li>
+                        <li><a href="#">Polars historiques</a></li>
+                        <li><a href="#">Romans noirs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Science fiction | Fantasy</a></li>
+                <li><a href="#">Bandes dessinées</a>
+                    <ul>
+                        <li><a href="#">BD adultes</a></li>
+                        <li><a href="#">BD jeunesse</a></li>
+                        <li><a href="#">Mangas</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Jeunesse</a>
+                    <ul>
+                        <li><a href="#">Romans jeunesse</a></li>
+                        <li><a href="#">Premières lectures</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Culture | Société</a>
+                    <ul>
+                        <li><a href="#">Dictionnaires et langues</a></li>
+                        <li><a href="#">Esotérisme et paranormal</a></li>
+                        <li><a href="#">Histoire et actualité</a></li>
+                        <li><a href="#">Religion et spiritualité</a></li>
+                        <li><a href="#">Sciences humaines</a></li>
+                        <li><a href="#">Scolaire et parascolaire</a></li>
+                        <li><a href="#">Santé et bien-être</a></li>
+                        <li><a href="#">Science, droit, économie</a></li>
+                        <li><a href="#">Vie pratique et loisirs</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Art</a></li>
+                <li><a href="#">Guides et tourisme</a></li>
+                <li><a href="#">Divers</a>
+                    <ul>
+                        <li><a href="#">Livres dans une autre langue</a></li>
+                        <li><a href="#">Non classés</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section id="conteneur">
+        <h4><a href="index.html">accueil</a> > <span class="arborescence">mode d'emploi</span></h4>
+        <div id="ccm">
+            <h2>Comment ça marche ?</h2>
+            <p>J'indique les livres que je possède en saisissant simplement les codes barres des livres ou en cliquant
+                sur le bouton "Je le possède". Lorsqu'un membre souhaite un de mes livres, je le lui expédie et je gagne
+                les Points correspondant à la valeur du livre. Avec mes Points je commande les livres que je désire. Je
+                garde les livres que je reçois car ils sont à moi.</p>
+            <h3>Un exemple d'échange entre Gilles et Sophie</h3>
+            <p>Sophie possède Sauve moi de G.Musso. Gilles souhaite recevoir Sauve moi de G.musso. Sophie possède de nombreux livres qu'elle souhaite échanger pour en lire de nouveaux,
+                dont Sauve-moi de G. Musso. Elle a donc indiqué sur <span class="bold">Troc de livres</span> la liste de ses livres disponibles à l'échange.<br/>
+                Gilles a déjà échangé plusieurs livres sur <span class="bold">Troc de livres</span> et possède maintenant 6 Points.
+                Aujourd'hui il souhaite commander un nouveau livre sur <span class="bold">Troc de livres</span>. il consulte les pages du site et
+                découvre que le livre Sauve-moi de G. Musso est disponible à l'échange.
+                Fan de lectures contemporaines, Gilles commande le livre en échange de 1 Point.<br/>
+                Sophie reçoit un email de <span class="bold">Troc de livres</span> l'informant qu'une personne souhaite recevoir son livre Sauve-moi
+                de G. Musso. Elle confirme l'échange, les coordonnées du destinataire lui sont donc transmises par Bibliotroc, puis
+                procède à l'expédition du livre. Gilles reçoit le livre et confirme sa réception. Sophie est crédité de 1 Point pour l'échange de son livre.
+            </p>
+            <h2>La garantie des échanges avec Bibliotroc</h2>
+            <p><span class="bold">Troc de livres</span> veille au bon déroulement des échanges et vous garantit en cas d'échanges non satisfaisants.
+                Si par exemple je ne reçois pas un livre commandé dans les 15 jours, <span class="bold">Troc de livres</span> me recrédite mes Points.<br/>
+                Pour expédier mes livres, je n'ai pas besoin de me déplacer dans un bureau de Poste, <span class="bold">Troc de livres</span>
+                m'indique le poids du livre, je sais donc à combien l'affranchir.
+                Si je dois m'absenter ou partir en vacances, je mets simplement mon compte en pause avec l'option "Mode
+                vacances".<br/><br/>
+
+                Vous souhaitez en savoir plus ? Consultez notre rubrique <a href="#">Foire aux questions.</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div id="bande-livres">
+            <img id="livres-gauche" src="images/livres-gauche.jpg" alt="footer"><!--
+         --><a href="https://www.facebook.com/" target="_blank"><img id="facebook" src="images/facebook.jpg" alt="facebook"></a><!--
+         --><a href="https://twitter.com/" target="_blank"><img id="twitter" src="images/twitter.jpg" alt="twitter"></a><!--
+         --><img id="livres-droite" src="images/livres-droite.jpg" alt="footer">
+        </div>
+        <div id="baseline">
+            <p class="copyright">© 2016. Sophie Seigneuret dans le cadre de l'ISI</p>
+            <a class="copyright" href="#">CGU</a>
+            <a class="copyright" href="#">Nous contacter</a>
+        </div>
+    </footer>
+</main>
+</body>
+</html>

@@ -26,3 +26,5 @@ Site réalisé dans le cadre d’un projet scolaire (ISI Montréal)
 - possibilité d’agrandir l’image en cliquant sur la loupe : l’image s’affiche en plus grand dans une pop-up
 
 **Pages suivantes du site en cours de développement**
+
+**Site prochainement «responsive»**
